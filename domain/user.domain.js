@@ -1,15 +1,14 @@
 const { attributes } = require("structure");
-
 const User = attributes({
-    name:{
+    name: {
         type: String,
         require: true,
     },
-    lastname:{
+    lastname: {
         type: String,
     }
-})(class User{
-    getCompleteName(){
+})(class User {
+    getCompleteName() {
         return this.name + " " + this.lastname;
     }
 });

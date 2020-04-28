@@ -5,7 +5,8 @@ class UserService {
   constructor({ UserRepository }) {
     this.UserRepository = UserRepository;
   }
-  async getUser() {
+  async getUsers() {
+
     const users = await this.UserRepository.getUsers();
     // do something
 
